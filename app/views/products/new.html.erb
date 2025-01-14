@@ -1,0 +1,12 @@
+<h1>new</h1>
+<%= form_with model: @product,url: products_path do |f| %>
+    <p>
+        <%= f.label :name,"商品名" %>: 
+        <%= f.text_field :name %>
+    </p>
+    <p>
+        <%= f.label :price,"価格" %>: 
+        <%= f.text_field :price %>円
+    </p>
+    <%= f.submit "商品に追加" %>
+<% end %>
